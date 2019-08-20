@@ -30,6 +30,13 @@ header div{
 header div a{
     margin: 20px;
 }
+.carousel-caption h3, .carousel-caption p{
+    background-color: rgb(51, 50, 50, 0.7);
+    border-radius: 50px;
+}
+.carousel-caption p{
+    font-size: 1.2rem;
+}
 
 /* ------------------------------------------------------------quem somos----------------------------------------------------------- */
 article{

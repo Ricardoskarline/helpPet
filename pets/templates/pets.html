@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% load static%}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'cadastro.css' %}" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  
+  <header>
+    <div>
+      <img src="/media/pet.png" alt=""> 
+      <a href="/index">Help Pet</a>
+    </div>
+    <a href="/index">Home Pet</a>
+  </header>
+  <main>
+    <div class="container">
+      <h2>Cadastrar Pet</h2>
+      
+      <form method="POST" action="/" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="dados-pessoais">Dados Pessoais:
+          <input type="text" name="nome" placeholder="Insira seu nome">
+          <input type="email" name="email" placeholder="E-mail">
+          <input type="tel" name="telefone" placeholder="Telefone">
+        </div>
+        <input type="tel" name="cidade" placeholder="Cidade">
+        <select class="animal" name="especie">
+          <option value="G">Gato</option>
+          <option value="C">Cachorro</option>
+        </select>
+        <select class="genero" name="genero">
+          <option value="M">macho</option>
+          <option value="F">femea</option>
+        </select>
+        
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Descrição:</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="desc" placeholder="Exemplo: Vacinado, Castrado, Condições de rua..."></textarea>
+        </div>
+        <hr>
+        <label for="">Inserir imagem:</label>
+        <input type="file" name="foto">
+        <hr>
+        
+        <input class="botao" type="submit" value="Cadastrar" href="/cadastro">
+        
+      </form>
+    </div>
+  </main>
+  
+  <!-- <footer >
+    <div>
+      <img src="/media/whatsapp.png" alt="">
+      <img src="/media/facebook.png" alt="">
+      <img src="/media/twitter.png" alt="">
+    </div>
+    <div class="footer-copyright text-center py-3">
+      <p> © 2019 RISR EstaçãoHack: </p>
+      <a href="https://mdbootstrap.com/education/bootstrap/"> HelpPet.com</a>
+    </div>
+  </footer> -->
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+</body>
+</html>
+
