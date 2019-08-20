@@ -1,0 +1,228 @@
+body{
+    background-color: rgb(226, 226, 226);
+}
+header{
+    background-color: rgb(8, 8, 8, 0.6);
+    color: white;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+header a{
+    color: aliceblue;
+    font-size: 1.2rem;
+    margin: 60px;
+}
+.carousel-control-next, .carousel-control-prev{
+    height: 80%;
+    margin-top: 100px;
+}
+header div{
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+header div a{
+    margin: 20px;
+}
+
+/* ------------------------------------------------------------quem somos----------------------------------------------------------- */
+article{
+    background-color: #7ecfa9;
+    height: auto;
+    padding: 10px;
+    margin: 1px;
+}
+
+#oque-fazemos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#oque-fazemos div img{
+    height: 90px;
+    width: 90px;
+}
+#oque-fazemos div{
+    display: flex;
+    text-align: center;
+    width: 25vw;
+}
+#oque-fazemos div p{
+    color: white;
+    font-size: 25px;
+    font-family: 'Handlee', cursive;
+}
+.d-block{
+    height: 99vh;
+}
+/* ----------------------------------------------------------adotar um animal--------------------------------------------- */
+h2{
+    color: rgb(65, 65, 65);
+    text-align: center;
+    margin: 15px;
+    font-size: 35px;
+    font-family: 'Handlee', cursive;
+}
+aside{
+    display: flex;
+    justify-content: space-aroun;
+}
+nav{
+    border: 2px solid #7ecfa9;
+    border-radius: 15px;
+    height: 300px;
+    width:15vw;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav section{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 20px;  
+}
+nav .form-control{
+    width: 200px;
+    margin: 10px;
+
+}
+.adotar{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 525px;
+    align-items: center;
+    box-shadow: 0 0 7px #272727;
+    color: #272727;
+}
+a{
+    text-decoration: none;
+    
+}
+.dados{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Handlee', cursive;
+}
+.imagem{
+    width: 160px;
+    height: 140px;
+    margin: 5px;
+    border-radius: 25px;
+    border:5px solid #7ecfa9;
+}
+.xop-section {
+    max-width: 80VW;
+}
+.descricao{
+    border: 0.5px solid black;
+    border-radius: 5px;
+    margin: 8px;
+    padding: 6px;
+}
+.adote{
+    align-items: center;
+    background-color:#7ecfa9;
+    border-radius: 10px;
+    color:white;
+    display: flex;
+    font-size: 25px;
+    height: 48px;
+    justify-content: center;
+    width:150px;
+    font-family: 'Handlee', cursive;
+}
+.xop-grid {
+    padding: 0;
+    list-style: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin:0px;
+}
+
+.xop-grid:after {
+    clear: both;
+}
+
+.xop-grid:after, .xop-box:before {
+    content: '';
+    display: table;
+}
+
+.xop-grid li {
+    width: 200px;
+    height: 525px;
+    display: inline-block;
+    margin: 10px;
+    
+}
+.xop-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-in-out, 
+    -webkit-transform 0.3s ease-in-out;
+    -moz-transition:  0.3s ease-in-out, 
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, 
+    transform 0.3s ease-in-out, ;
+    
+}
+.xop-box:hover {
+    transform: scale(1.05); 
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Handlee', cursive;
+}
+.paginas{
+    background-color: transparent;
+    margin: 70px;
+    text-align: center;
+}
+.paginas a{
+    color:#00a859;
+    font-size: 1.5rem; 
+    border: 2px solid #7ecfa9;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+
+.paginas a:hover{
+    transform: scale(1.05); 
+}
+/* ----------------------------------------------footer---------------------------------------------- */
+footer{
+    background-color: #272727;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+footer div{
+    display: flex;
+}
+footer img{
+    height: 45px;
+    width: 40px;
+    margin: 20px;
+}

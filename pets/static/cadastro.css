@@ -1,0 +1,103 @@
+body{
+    background-image: url(/media/fundo.jpg);
+}
+
+header{
+    background-color: rgb(8, 8, 8, 0.6);
+    color: white;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+header a{
+    color: aliceblue;
+    font-size: 1.2rem;
+    margin: 60px;   
+}
+header div{
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+header div a{
+    display: flex;
+    margin: 20px;
+}
+
+main{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    align-items: center;
+    background-color: #7ecfa9;
+    border-radius: 45px;
+    box-shadow: 0 0 7px #272727;
+    display: flex;
+    height: 700px;
+    flex-direction: column;
+    font-family: 'Handlee', cursive;
+    overflow:hidden;
+    width: 800px;
+}
+main h2{
+    background-color:aliceblue;
+    text-align: center;
+    width: 150%;
+}
+.dados-pessoais{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+.dados-pessoais input{
+    border-radius: 5px;
+    width: 300px;
+    margin: 4px;
+}
+.form-control{
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.animal{
+    border-radius: 5px;
+    width: 120px;
+    margin: 5px;
+}
+.genero{
+    border-radius: 5px;
+    margin: 5px;
+}
+.botao{
+    width: 150px;
+    height: 50px;
+    border-radius: 9px;
+    
+    display: flex;
+}
+
+footer{
+    background-color: #272727;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+footer div{
+    display: flex;
+}
+footer img{
+    height: 45px;
+    width: 40px;
+    margin: 20px;
+}
