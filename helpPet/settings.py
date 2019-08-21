@@ -128,5 +128,4 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-heroku config:set DISABLE_COLLECTSTATIC=1
 django_heroku.settings(locals())
