@@ -1,1 +1,1 @@
-web: gunicorn <helpPet>.wsgi
+web: gunicorn helpPet.wsgi
